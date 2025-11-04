@@ -1,24 +1,15 @@
-<!doctype html>
-<html lang="pt-BR">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Listas do Google Sheets</title>
-</head>
-<body>
-  <h1>Listas do Google Sheets</h1>
+<!-- seletor de lista -->
+<select id="aba">
+  <option value="lista">Lista principal</option>
+  <option value="lista1">Lista 1</option>
+  <option value="lista2">Lista 2</option>
+</select>
 
-  <!-- botões para escolher a aba -->
-  <button onclick="carregar('lista')">Carregar LISTA</button>
-  <button onclick="carregar('lista1')">Carregar LISTA 1</button>
-  <button onclick="carregar('lista2')">Carregar LISTA 2</button>
+<input id="filtro" placeholder="Filtrar por pessoa ou item..." />
 
-  <ul id="tabela"></ul>
+<p id="status">Carregando…</p>
 
-  <!-- aqui o site vai carregar o script -->
- <script src="script.js?v=4"></script>
-</body>
-</html>
+<ul id="lista-ul"></ul>
 
-
-
+<!-- coloque seu JS no final com defer -->
+<script src="script.js" defer></script>
